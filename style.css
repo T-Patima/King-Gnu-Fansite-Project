@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* ป้องกันไม่ให้เกิด scrollbar แนวนอน */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Navbar */
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    z-index: 1000;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-link li {
+    margin: 0 30px;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./pic/homepic.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h2 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Event */
+section {
+    width: auto;
+    margin: 70px auto;
+    padding: 20px;
+
+}
+
+section.events {
+    max-width: 1400px;
+    width: 95%;
+    margin: 70px auto;
+    padding: 20px;
+}
+
+.tour-list {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    color: rgb(73, 73, 73);
+    font-size: 1.2vmin;
+    line-height: 1.5;
+}
+
+.title {
+    text-align: center;
+    font-size: 3vmin;
+
+}
+
+.video-con {
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.video-con iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.row .column {
+    width: 40%;
+    /* flex-direction: column;
+    align-items: center; */
+    padding: 10px;
+
+}
+
+.row .column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+
+}
+
+.row .column p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.row .column h3 {
+    font-size: 4vmin;
+    margin-bottom: 20px;
+}
+
+.row .column .tour-more p {
+    font-size: 0.9em;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    color: rgb(73, 73, 73);
+
+}
+
+.row .column .tour-more p:last-child {
+    margin-bottom: 30px;
+}
+
+.btn-con {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./pic/king-gnu\ 7.2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+
+.about-con {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.about-con h1 {
+    font-size: 7vmin;
+    margin: 0;
+
+}
+
+.about-con .line {
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+.about-con p {
+    color: rgb(244, 240, 240);
+    line-height: 1.5;
+}
+
+.about-con .ctn {
+    margin-top: 40px;
+}
+
+/* Member Section */
+/* section {
+    width: 80%;
+    margin: 80px auto;
+} */
+
+.title-2 {
+    text-align: center;
+    font-size: 4vmin;
+    color: #282727;
+}
+
+.row-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row-1 .col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 0 10px 30px 10px;
+}
+
+.row-1 .col-1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.row-1 .col-1 img:hover {
+    transform: scale(1.05);
+}
+
+.row-1 .col-1 p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    line-height: 1;
+    color: rgb(73, 73, 73);
+}
+
+.kg-mem .row-1 {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h5 {
+    font-size: 3vmin;
+    color: #444444;
+    margin: 20px auto;
+}
+
+/* Album section */
+/* section {
+    width: auto;
+    margin: 70px auto;
+    padding: 20px; 
+
+}*/
+
+.album {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./pic/kg-pic3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.row-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row-2 .col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 0 10px 30px 10px;
+}
+
+.row-2 .col-2 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8%;
+    transition: transform 0.3s;
+}
+
+.row-2 .col-2 img:hover {
+    transform: scale(1.07);
+}
+
+.row-2 .col-2 h5 {
+    font-size: 4vmin;
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+.row-2 .col-2 p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    line-height: 1;
+    color: whitesmoke;
+}
+
+.title-3 {
+    color: whitesmoke;
+    margin-bottom: 60px;
+}
+
+.title-3 h1 {
+    font-size: 4vmin;
+}
+
+/* Billboard section */
+.billboard {
+    width: 100%;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.billboard .row-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.billboard .text-side {
+    width: 45%;
+}
+
+.billboard .text-side h1 {
+    font-size: 2.2rem;
+    color: rgb(73, 73, 73);
+    margin-bottom: 15px;
+}
+
+.billboard .text-side p {
+    color: #676767;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.billboard .highlight {
+    font-weight: bold;
+    color: #fc036b;
+}
+
+/* ปุ่ม */
+.billboard .ctn {
+    background: #fc036b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.billboard .ctn:hover {
+    background: #b5024e;
+}
+
+.billboard .img-side {
+    width: 50%;
+}
+
+.billboard .img-gallery {
+    /* *** เพิ่มส่วนนี้: เพื่อจัดเรียงรูปภาพเป็น Grid 2x2 *** */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* (แบ่งเป็น 2 คอลัมน์เท่าๆ กัน) */
+    gap: 15px;
+    /* (ระยะห่างระหว่างรูปภาพ) */
+}
+
+.billboard .img-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.billboard .img-gallery img:hover {
+    transform: scale(1.03);
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #444444;
+    text-align: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+/* Mobile device*/
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #444444;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+
+    }
+
+    .nav-link li {
+        margin: 30px auto;
+    }
+
+    /* Tour Section */
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    .about .about-con {
+        width: 100%;
+    }
+
+    /* Member Section */
+    .kg-mem .row-1 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .row-1 {
+        flex-direction: column;
+    }
+
+    /* Album Section */
+    .album {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .row-2 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .row-2 .col-2 {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    .row-2 .col-2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Billboard Section */
+    .row-3 {
+        flex-direction: column;
+    }
+
+    .billboard {
+        padding: 40px 5%;
+    }
+
+    .billboard .text-side,
+    .billboard .img-side {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .billboard .img-gallery {
+        justify-content: center;
+    }
+
+    .billboard .text-side p {
+        text-align: left;
+        padding: 0 10px;
+    }
+
+}
